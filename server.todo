@@ -1,0 +1,5 @@
+ 1. Simulation of  Android Server node
+  ☐ Server node  can "submit a request" us to mgmt server.
+  ☐ request includes "server name" and "status"
+  ☐ status only have "Available", "Occupied" and "Dump"
+  ☐ submit form
