@@ -1,5 +1,11 @@
- 1. Simulation of  Android Server node
-  ☐ Server node  can "submit a request" us to mgmt server.
-  ☐ request includes "server name" and "status"
-  ☐ status only have "Available", "Occupied" and "Dump"
-  ☐ submit form
+1. Simulation of  Android Server node
+ ✔  Both mgmt server and client side have servernode model which represent "Andorid Sever Node" @done (14-09-24 11:29)
+ ✔  Servernode model only has "name" and "status." @done (14-09-24 11:29)
+ ✔  Status only have "Available", "Occupied" and "Dump" @done (14-09-24 15:23)
+ ✔  subimitfoms/new represents a "registration" to instantiate a servernode object on both sides. @done (14-09-24 15:23)
+ ✔  submitforms/index can show all servernode's name and status @done (14-09-24 15:23)
+ ✔  It should have "change status" to put another request to change status of servernode. @done (14-09-24 15:58)
+ ✔  sumitforms/edit @done (14-09-24 15:58)
+
+ 2. Automation tools
+ ✔  build a rake file to build 48 sever nodes on both sides @done (14-09-24 17:05)

@@ -1,0 +1,31 @@
+<div class="panel panel-default">
+
+  <div class="panel-heading">
+    <h3 class="panel-title">Edit Android Server Node Info</h3>
+  </div>
+
+  <div class="panel-body">
+    <%= simple_form_for @servernode, :url => submitform_path ,:html => { :class => "form form-horizontal", :method => :put } do|f|%>
+
+  <div class="form-group">
+    <div class="col-sm-2">
+      <%= f.input :name %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-4">
+      <%= f.input :status, :collection =>['Available','Occupied','Dump'],
+        as: :radio_buttons %>
+      </div>
+    </div>
+
+    <div class ="form-group">
+    <div calss ="col-sm-2">
+      <%= f.submit "Submit",:class => "btn btn-default" , :disable_with => 'Submiting...'  %>
+    </div>
+  </div>
+
+  <% end %>
+
+</div>

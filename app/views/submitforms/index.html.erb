@@ -1,1 +1,27 @@
-haahh
+<h3>Android Server Node Lists</h3>
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <table class="table table-bordered col-md-6">
+      <thead style ="background-color: #70DB93 ">
+        <tr>
+          <td> <strong> ID </strong></td>
+          <td> <strong> Server </strong> </td>
+          <td> <strong> Status</strong></td>
+          <td> <strong> Change Status </strong></td>
+        </tr>
+      </thead>
+      <tbody>
+      <% @servernodes.each do |f|%>
+      <tr>
+        <td> <%= f.id%></td>
+        <td> <%= f.name %> </td>
+        <td> <%= f.status %> </td>
+        <td> <%= link_to("Change Status", edit_submitform_path(f),
+              :class => "btn btn-danger btn-sm") %> </td>
+      </tr>
+
+      </tbody>
+    <% end %>
+    </table>
+</div>
