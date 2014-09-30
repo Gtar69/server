@@ -1,0 +1,6 @@
+<%= simple_form_for @servernode, :url => {:controller => 'submitforms', :action => 'create'},:remote => true do |f|%>
+  <%= f.input :name %>
+  <%= f.input :status, :collection =>['Available','Occupied','Ready','Dump'],
+      as: :radio_buttons %>
+  <%= f.submit :class => "btn btn-default"  %>
+<%end%>

@@ -1,7 +1,11 @@
 <h3>Android Server Node Lists</h3>
-
 <div class="panel panel-default">
   <div class="panel-body">
+
+  <div class="pull-right">
+    <%= link_to("Add Server Node", {:controller => 'submitforms', :action => 'new'},:remote => true, :class => "btn btn-danger") %>
+  </div>
+
     <table class="table table-bordered col-md-6">
       <thead style ="background-color: #70DB93 ">
         <tr>
@@ -20,8 +24,13 @@
         <td> <%= link_to("Change Status", edit_submitform_path(f),
               :class => "btn btn-danger btn-sm") %> </td>
       </tr>
-
       </tbody>
     <% end %>
     </table>
 </div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-2" id="task-form" style="display:none;"></div>
+</div>
+
+

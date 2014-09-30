@@ -7,7 +7,7 @@ namespace :dev do
       s = Servernode.create(:name=> server_name, :status => "Available")
       s.save!
       p = {:servernode => {:name => server_name,:status => "Available"}}
-      RestClient.post("http://localhost:3000/servernodes",p)
+      #RestClient.post("http://localhost:3000/servernodes",p)
     end
   end
 
